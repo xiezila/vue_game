@@ -1,0 +1,80 @@
+@import "variable.styl"
+
+.iconfont
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+
+body, html
+  //height: 100%
+  line-height: 1
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  color: $color-text
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+.button
+  border none
+  border-radius 3px
+  color #fff
+  cursor pointer
+  display inline-block
+  padding 5px 10px
+  background-color #666666
+  outline none
+.button:hover
+  background-color #999
+  color #fff
+.button-primary
+  color #fff
+  background-color #999
+.button-primary:hover
+  background-color #409EFF
+.button-danger
+  background-color #690D04
+.button-danger:hover
+  background-color #B91A09
+.button-toggle
+  cursor pointer
+  outline none
+  border none
+  padding 5px
+  color: #fff
+  border-radius 3px
+  background-color #999
+.button-toggle-on
+  border-top-right-radius 0
+  border-bottom-right-radius 0
+  &:hover
+    background-color #409EFF
+.button-toggle-off
+  border-top-left-radius 0
+  border-bottom-left-radius 0
+  &:hover
+    background-color #B91A09
+.button-toggle-active
+  background-color #409EFF
+.button-toggle-inactive
+  background-color #B91A09
